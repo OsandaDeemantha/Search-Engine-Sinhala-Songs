@@ -139,3 +139,86 @@
 2020-06-26 18:11:18.092 INFO  (qtp1757317128-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=2
 2020-06-26 18:11:21.007 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/select params={q=*:*&_=1593195078035} hits=1100 status=0 QTime=90
 2020-06-26 18:12:05.360 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/select params={q=name:batman} hits=4 status=0 QTime=32
+2020-06-26 18:19:13.382 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=1
+2020-06-26 18:19:13.396 INFO  (qtp1757317128-24) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1593195071863} status=0 QTime=0
+2020-06-26 18:19:13.397 INFO  (qtp1757317128-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=4
+2020-06-26 18:19:13.407 INFO  (qtp1757317128-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1593195077046} status=0 QTime=2
+2020-06-26 18:19:13.410 INFO  (qtp1757317128-24) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1593195071741&ts=1593195071741} status=503 QTime=0
+2020-06-26 18:19:13.411 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/system params={wt=json&_=1593195553355} status=0 QTime=4
+2020-06-26 18:19:16.347 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:19:16.364 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=3
+2020-06-26 18:19:16.379 INFO  (qtp1757317128-15) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/config params={wt=json&_=1593195071863} status=0 QTime=1
+2020-06-26 18:19:16.380 INFO  (qtp1757317128-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1593195071863} status=0 QTime=3
+2020-06-26 18:19:16.508 INFO  (qtp1757317128-15) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1593195071863} status=0 QTime=4
+2020-06-26 18:19:23.731 INFO  (qtp1757317128-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:19:23.735 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1593195071863} status=0 QTime=1
+2020-06-26 18:19:23.738 INFO  (qtp1757317128-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=6
+2020-06-26 18:19:23.744 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/config params={wt=json&_=1593195071863} status=0 QTime=0
+2020-06-26 18:19:23.856 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1593195071863} status=0 QTime=3
+2020-06-26 18:19:29.678 INFO  (qtp1757317128-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:19:29.704 INFO  (qtp1757317128-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=4
+2020-06-26 18:19:29.704 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1593195071863} status=0 QTime=0
+2020-06-26 18:19:29.709 INFO  (qtp1757317128-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1593195077046} status=0 QTime=2
+2020-06-26 18:19:29.714 INFO  (qtp1757317128-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/system params={wt=json&_=1593195553355} status=0 QTime=3
+2020-06-26 18:19:29.723 INFO  (qtp1757317128-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1593195071741&ts=1593195071741} status=503 QTime=0
+2020-06-26 18:28:12.160 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:12.165 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=4
+2020-06-26 18:28:12.168 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1593195071863} status=0 QTime=2
+2020-06-26 18:28:19.999 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:20.011 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=5
+2020-06-26 18:28:20.020 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1593196099985} status=0 QTime=1
+2020-06-26 18:28:20.102 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:20.114 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=3
+2020-06-26 18:28:20.119 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1593196099985} status=0 QTime=0
+2020-06-26 18:28:27.533 INFO  (qtp1757317128-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:27.546 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=4
+2020-06-26 18:28:27.547 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1593195071863} status=0 QTime=2
+2020-06-26 18:28:35.563 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:35.570 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/file params={wt=json&_=1593196115536} status=0 QTime=0
+2020-06-26 18:28:35.574 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=9
+2020-06-26 18:28:35.610 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1593196115536} status=0 QTime=3
+2020-06-26 18:28:39.282 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=2
+2020-06-26 18:28:39.282 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=3
+2020-06-26 18:28:41.960 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:41.960 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=0
+2020-06-26 18:28:43.242 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:43.242 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=1
+2020-06-26 18:28:43.887 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:43.887 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=0
+2020-06-26 18:28:44.433 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:44.433 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=0
+2020-06-26 18:28:45.102 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:45.103 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=1
+2020-06-26 18:28:47.998 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:47.998 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=0
+2020-06-26 18:28:49.133 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:49.134 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=1
+2020-06-26 18:28:49.767 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:49.767 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=0
+2020-06-26 18:28:50.455 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} hits=1100 status=0 QTime=0
+2020-06-26 18:28:50.455 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={wt=json&_=1593195071741&ts=1593195071741} status=0 QTime=0
+2020-06-26 18:28:51.615 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:51.628 INFO  (qtp1757317128-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=5
+2020-06-26 18:28:51.657 INFO  (qtp1757317128-22) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1593196099985} status=0 QTime=34
+2020-06-26 18:28:55.771 INFO  (qtp1757317128-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:55.776 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=5
+2020-06-26 18:28:57.542 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:57.545 INFO  (qtp1757317128-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1593195077046} status=0 QTime=1
+2020-06-26 18:28:57.548 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=4
+2020-06-26 18:28:59.423 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:28:59.432 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=3
+2020-06-26 18:28:59.446 INFO  (qtp1757317128-36) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/config params={wt=json&_=1593195071863} status=0 QTime=0
+2020-06-26 18:28:59.449 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1593195071863} status=0 QTime=6
+2020-06-26 18:28:59.530 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1593195071863} status=0 QTime=3
+2020-06-26 18:29:01.297 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:29:01.309 INFO  (qtp1757317128-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=9
+2020-06-26 18:29:01.333 INFO  (qtp1757317128-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/segments params={wt=json&_=1593196141268} status=0 QTime=34
+2020-06-26 18:29:04.421 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:29:04.425 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=3
+2020-06-26 18:29:06.172 INFO  (qtp1757317128-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/select params={q=*:*&_=1593195078035} hits=1100 status=0 QTime=0
+2020-06-26 18:54:42.311 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593195071741} status=0 QTime=0
+2020-06-26 18:54:42.319 INFO  (qtp1757317128-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=4
+2020-06-26 18:54:42.340 INFO  (qtp1757317128-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593195071741} status=0 QTime=4
+2020-06-26 19:59:11.269 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593201550890} status=0 QTime=2
+2020-06-26 19:59:11.283 INFO  (qtp1757317128-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593201550891} status=0 QTime=15
+2020-06-26 19:59:11.283 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593201550891} status=0 QTime=5
