@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>සිංහල ගීත සෙවුම් යන්ත්‍රය{% if query %}: {{ query }}{% endif %}</title>
+  </head>
+  <body>
+    <h1>සිංහල ගීත සෙවුම් යන්ත්‍රය</h1>
+    <form action="" method="GET">
+      <label>
+        මෙහි ටයිප් කරන්න:
+        <input type="search" id="q" name="q" value="{{ query }}">
+      </label>
+      <input type="hidden" name="page" value="1">
+      <button type="submit">සොයන්න</button>
+    </form>
+    <script>
+    var qfield = document.getElementById('q');
+    qfield.setSelectionRange(0, qfield.value.length);
+    qfield.select();
+    </script>
+    {% if query %}
+      <h2>"{{ query }}" සඳහා සෙවුම් ලැයිස්තුව</h2>
+      {% if solr.docs %}
+        <p>Page {{ page }} of {{ page_max }}</p>
+        <p>Page:
+        {% for i in range(1, page_max+1) %}
+          {% if i == page %}
+            {{ i }}
+          {% else %}
+            <a href="?q={{ query }}&page={{ i }}">{{ i }}</a>
+          {% endif %}
+        {% endfor %}</p>
+        <ul>
+          {% for doc in solr.docs %}
+          <li>
+            <div><a href="{{ doc.url }}">{{ doc.title }}</a></div>
+            <div>{{ doc.abstract }}</div>
+          </li>
+          {% endfor %}
+        </ul>
+        Page:
+        {% for i in range(1, page_max+1) %}
+          {% if i == page %}
+            {{ i }}
+          {% else %}
+            <a href="?q={{ query }}&page={{ i }}">{{ i }}</a>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p>සෙවුම් ලැයිස්තුවක් නොමැත.</p>
+      {% endif %}
+    {% endif %}
+  </body>
+</html>
