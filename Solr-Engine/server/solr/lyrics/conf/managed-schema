@@ -19,7 +19,7 @@
     <analyzer type="query">
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords_artist.txt" ignoreCase="true"/>
-      <filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_nl_artist.txt" ignoreCase="false"/>
+      <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms_artist.txt"/>
     </analyzer>
   </fieldType>
   <fieldType name="binary" class="solr.BinaryField"/>
@@ -82,13 +82,13 @@
     <analyzer type="index">
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords_lyrics.txt" ignoreCase="true"/>
-      <filter class="solr.HunspellStemFilterFactory" strictAffixParsing="true" dictionary="si_LK.dic" affix="si_LK.aff" ignoreCase="true"/>
+      <filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_nl_lyrics.txt" ignoreCase="false"/>
     </analyzer>
     <analyzer type="query">
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords_lyrics.txt" ignoreCase="true"/>
       <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms_lyrics.txt"/>
-      <filter class="solr.HunspellStemFilterFactory" strictAffixParsing="true" dictionary="si_LK.dic" affix="si_LK.aff" ignoreCase="true"/>
+      <filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_nl_lyrics.txt" ignoreCase="false"/>
     </analyzer>
   </fieldType>
   <fieldType name="string" class="solr.StrField" sortMissingLast="true" docValues="true"/>
@@ -466,23 +466,13 @@
     <analyzer type="index">
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords_title.txt" ignoreCase="true"/>
-      <filter class="solr.HunspellStemFilterFactory" strictAffixParsing="true" dictionary="si_LK.dic" affix="si_LK.aff" ignoreCase="true"/>
+      <filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_nl_title.txt" ignoreCase="false"/>
     </analyzer>
     <analyzer type="query">
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords_title.txt" ignoreCase="true"/>
       <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms_title.txt"/>
-      <filter class="solr.HunspellStemFilterFactory" strictAffixParsing="true" dictionary="si_LK.dic" affix="si_LK.aff" ignoreCase="true"/>
-    </analyzer>
-  </fieldType>
-    <fieldType name="title_artist_ly" class="solr.TextField" positionIncrementGap="100" multiValued="true">
-    <analyzer type="index">
-      <tokenizer class="solr.StandardTokenizerFactory"/>
-      <filter class="solr.ShingleFilterFactory" maxShingleSize="6" outputUnigrams="false"/>
-    </analyzer>
-    <analyzer type="query">
-      <tokenizer class="solr.StandardTokenizerFactory"/>
-      <filter class="solr.ShingleFilterFactory" maxShingleSize="6" outputUnigrams="false"/>
+      <filter class="solr.StemmerOverrideFilterFactory" dictionary="lang/stemdict_nl_title.txt" ignoreCase="false"/>
     </analyzer>
   </fieldType>
   <field name="_nest_path_" type="_nest_path_"/>
@@ -492,7 +482,6 @@
   <field name="artist" type="artist_ly"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
   <field name="song" type="song_ly"/>
-  <field name="title_artist" type="title_artist_ly" uninvertible="true" multiValued="true" indexed="true" stored="true"/>
   <field name="title" type="title_ly"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
@@ -562,8 +551,6 @@
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
   <dynamicField name="*_d" type="pdouble" indexed="true" stored="true"/>
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
-  <copyField source="artist" dest="title_artist"/>
-  <copyField source="title" dest="title_artist"/>
   <copyField source="song" dest="song_str" maxChars="256"/>
   <copyField source="artist" dest="artist_str" maxChars="256"/>
   <copyField source="title" dest="title_str" maxChars="256"/>

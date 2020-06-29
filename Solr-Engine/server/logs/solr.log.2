@@ -1,154 +1,370 @@
-2020-06-26 14:50:15.598 INFO  (main) [   ] o.e.j.u.log Logging initialized @2468ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-06-26 14:50:15.956 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.2+9-LTS
-2020-06-26 14:50:15.992 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/contexts/] at interval 0
-2020-06-26 14:50:16.587 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2020-06-26 14:50:16.611 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2020-06-26 14:50:16.611 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2020-06-26 14:50:16.616 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2020-06-26 14:50:16.758 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2020-06-26 14:50:16.766 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.2
-2020-06-26 14:50:16.766 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2020-06-26 14:50:16.766 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs
-2020-06-26 14:50:16.766 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-06-26T14:50:16.766737Z
-2020-06-26 14:50:16.844 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr
-2020-06-26 14:50:16.860 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr/solr.xml
-2020-06-26 14:50:16.987 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c, but no JMX reporters were configured - adding default JMX reporter.
-2020-06-26 14:50:18.061 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2020-06-26 14:50:19.251 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@79d9214d[provider=null,keyStore=null,trustStore=null]
-2020-06-26 14:50:19.253 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@79d9214d[provider=null,keyStore=null,trustStore=null]
-2020-06-26 14:50:20.244 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@22a6e998[provider=null,keyStore=null,trustStore=null]
-2020-06-26 14:50:20.244 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@22a6e998[provider=null,keyStore=null,trustStore=null]
-2020-06-26 14:50:20.286 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2020-06-26 14:50:20.582 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2020-06-26 14:50:20.586 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2020-06-26 14:50:20.783 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
-2020-06-26 14:50:20.784 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
-2020-06-26 14:50:20.793 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
-2020-06-26 14:50:20.923 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr
-2020-06-26 14:50:20.924 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [IR-project3]
-2020-06-26 14:50:21.016 WARN  (coreLoadExecutor-9-thread-1) [   x:IR-project3] o.a.s.c.SolrConfig Couldn't add files from /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr/IR-project/../../../lib filtered by .*\.jar to classpath: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr/IR-project/../../../lib
-2020-06-26 14:50:21.020 INFO  (coreLoadExecutor-9-thread-1) [   x:IR-project3] o.a.s.c.SolrResourceLoader [IR-project3] Added 62 libs to classloader, from paths: [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/contrib/clustering/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/contrib/extraction/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/contrib/langid/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/contrib/velocity/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/dist]
-2020-06-26 14:50:21.109 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4108fa66{/solr,file:///Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr-webapp/webapp/,AVAILABLE}{/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr-webapp/webapp}
-2020-06-26 14:50:21.128 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@56f6d40b{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2020-06-26 14:50:21.128 INFO  (main) [   ] o.e.j.s.Server Started @8004ms
-2020-06-26 14:50:21.513 INFO  (coreLoadExecutor-9-thread-1) [   x:IR-project3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
-2020-06-26 14:50:21.800 INFO  (coreLoadExecutor-9-thread-1) [   x:IR-project3] o.a.s.s.IndexSchema [IR-project3] Schema name=default-config
-2020-06-26 14:50:22.296 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [IR-project3]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1327)
-org.apache.solr.common.SolrException: Unable to create core [IR-project3]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1327) ~[?:?]
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:802) ~[?:?]
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.2.jar:4.1.2]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
-	at java.lang.Thread.run(Thread.java:834) [?:?]
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core IR-project3: Can't load schema /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr/IR-project/conf/schema.xml: Plugin init failure for [schema.xml] fieldType "blog_test": Plugin init failure for [schema.xml] analyzer/filter: Error loading class 'ReverseFilterFactory'
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:88) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr/IR-project/conf/schema.xml: Plugin init failure for [schema.xml] fieldType "blog_test": Plugin init failure for [schema.xml] analyzer/filter: Error loading class 'ReverseFilterFactory'
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:610) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:178) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:85) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:145) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:83) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "blog_test": Plugin init failure for [schema.xml] analyzer/filter: Error loading class 'ReverseFilterFactory'
-	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:502) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:178) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:85) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:145) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:83) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] analyzer/filter: Error loading class 'ReverseFilterFactory'
-	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:182) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:356) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:99) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48) ~[?:?]
-	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:502) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:178) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:85) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:145) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:83) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Error loading class 'ReverseFilterFactory'
-	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:570) ~[?:?]
-	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:639) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:339) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:332) ~[?:?]
-	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:356) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:99) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48) ~[?:?]
-	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:502) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:178) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:85) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:145) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:83) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
-	... 7 more
-Caused by: java.lang.ClassNotFoundException: ReverseFilterFactory
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:471) ~[?:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
-	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:899) ~[?:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:398) ~[?:?]
-	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:554) ~[?:?]
-	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:639) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:339) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader$3.create(FieldTypePluginLoader.java:332) ~[?:?]
-	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.readAnalyzer(FieldTypePluginLoader.java:356) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:99) ~[?:?]
-	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:48) ~[?:?]
-	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:502) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:178) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:85) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:145) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:83) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
-	... 7 more
-2020-06-26 14:51:21.366 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183081002} status=0 QTime=70
-2020-06-26 14:51:21.380 INFO  (qtp1757317128-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=84
-2020-06-26 14:51:21.403 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=4
-2020-06-26 14:52:04.462 INFO  (qtp1757317128-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183081002} status=0 QTime=1
-2020-06-26 14:52:04.477 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=7
-2020-06-26 14:52:04.491 INFO  (qtp1757317128-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1593183124445&since=0} status=0 QTime=2
-2020-06-26 14:52:10.247 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183081002} status=0 QTime=0
-2020-06-26 14:52:10.261 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=5
-2020-06-26 14:52:10.262 INFO  (qtp1757317128-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1593183081002} status=0 QTime=0
-2020-06-26 14:52:13.968 INFO  (qtp1757317128-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183081002} status=0 QTime=0
-2020-06-26 14:52:13.974 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1593183133946} status=0 QTime=0
-2020-06-26 14:52:13.987 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=10
-2020-06-26 14:52:14.950 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183081002} status=0 QTime=0
-2020-06-26 14:52:14.953 INFO  (qtp1757317128-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=4
-2020-06-26 14:52:14.989 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1593183134920} status=0 QTime=29
-2020-06-26 14:52:15.872 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183081002} status=0 QTime=0
-2020-06-26 14:52:15.880 INFO  (qtp1757317128-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=7
-2020-06-26 14:52:15.883 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1593183081002} status=0 QTime=0
-2020-06-26 14:52:17.222 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183081002} status=0 QTime=0
-2020-06-26 14:52:17.256 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=16
-2020-06-26 14:52:17.265 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183081003} status=0 QTime=4
-2020-06-26 14:58:59.712 INFO  (qtp1757317128-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593183539615} status=0 QTime=0
-2020-06-26 14:58:59.720 INFO  (qtp1757317128-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183539615} status=0 QTime=4
-2020-06-26 14:58:59.720 INFO  (qtp1757317128-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593183539615} status=0 QTime=4
-2020-06-26 14:59:15.921 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@56f6d40b{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2020-06-26 14:59:15.921 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2020-06-26 14:59:15.930 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=353580491
-2020-06-26 14:59:15.937 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2020-06-26 14:59:15.942 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5e922647: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@33adfdce
-2020-06-26 14:59:15.959 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2020-06-26 14:59:15.960 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@439e3cb4: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@5fd8c587
-2020-06-26 14:59:15.965 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2020-06-26 14:59:15.965 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1c9fbb61: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@788b946e
-2020-06-26 14:59:16.025 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4108fa66{/solr,null,UNAVAILABLE}{/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/server/solr-webapp/webapp}
+2020-06-29 11:29:13.326 INFO  (main) [   ] o.e.j.u.log Logging initialized @1506ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-06-29 11:29:13.609 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.2+9-LTS
+2020-06-29 11:29:13.632 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/contexts/] at interval 0
+2020-06-29 11:29:14.073 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-06-29 11:29:14.086 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-06-29 11:29:14.086 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-06-29 11:29:14.088 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-06-29 11:29:14.176 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-06-29 11:29:14.181 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.2
+2020-06-29 11:29:14.181 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-06-29 11:29:14.181 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine
+2020-06-29 11:29:14.181 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-06-29T11:29:14.181782Z
+2020-06-29 11:29:14.229 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr
+2020-06-29 11:29:14.237 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/solr.xml
+2020-06-29 11:29:14.324 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c, but no JMX reporters were configured - adding default JMX reporter.
+2020-06-29 11:29:15.112 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-06-29 11:29:15.335 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@75361cf6[provider=null,keyStore=null,trustStore=null]
+2020-06-29 11:29:15.336 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@75361cf6[provider=null,keyStore=null,trustStore=null]
+2020-06-29 11:29:15.604 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2eae4349[provider=null,keyStore=null,trustStore=null]
+2020-06-29 11:29:15.605 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2eae4349[provider=null,keyStore=null,trustStore=null]
+2020-06-29 11:29:15.632 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-06-29 11:29:15.905 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-06-29 11:29:15.908 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-06-29 11:29:16.053 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:16.054 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:16.061 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:16.120 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 7 core definitions underneath /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr
+2020-06-29 11:29:16.121 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [demo, lyrics, songs, localpedia, films, songscollectionnew, IR-project3]
+2020-06-29 11:29:16.187 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.2
+2020-06-29 11:29:16.189 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.2
+2020-06-29 11:29:16.206 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.c.SolrResourceLoader [lyrics] Added 63 libs to classloader, from paths: [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/clustering/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/extraction/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/langid/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/velocity/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/dist]
+2020-06-29 11:29:16.468 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@127e70c5{/solr,file:///Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr-webapp/webapp/,AVAILABLE}{/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr-webapp/webapp}
+2020-06-29 11:29:16.500 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@56276db8{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-06-29 11:29:16.500 INFO  (main) [   ] o.e.j.s.Server Started @4683ms
+2020-06-29 11:29:16.548 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.s.IndexSchema [songs] Schema name=default-config
+2020-06-29 11:29:16.559 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.s.IndexSchema [demo] Schema name=default-config
+2020-06-29 11:29:16.704 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.1.1
+2020-06-29 11:29:16.830 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.s.IndexSchema [lyrics] Schema name=default-config
+2020-06-29 11:29:17.462 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-06-29 11:29:17.462 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-06-29 11:29:17.463 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-06-29 11:29:17.535 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.c.CoreContainer Creating SolrCore 'demo' using configuration from instancedir /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/demo, trusted=true
+2020-06-29 11:29:17.538 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.c.CoreContainer Creating SolrCore 'songs' using configuration from instancedir /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songs, trusted=true
+2020-06-29 11:29:17.544 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.c.CoreContainer Creating SolrCore 'lyrics' using configuration from instancedir /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/lyrics, trusted=true
+2020-06-29 11:29:17.573 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.demo' (registry 'solr.core.demo') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:17.574 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.lyrics' (registry 'solr.core.lyrics') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:17.574 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:17.594 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.c.SolrCore [[demo] ] Opening new SolrCore at [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/demo], dataDir=[/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/demo/data/]
+2020-06-29 11:29:17.594 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songs], dataDir=[/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songs/data/]
+2020-06-29 11:29:17.594 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.c.SolrCore [[lyrics] ] Opening new SolrCore at [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/lyrics], dataDir=[/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/lyrics/data/]
+2020-06-29 11:29:17.649 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-06-29 11:29:18.604 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-06-29 11:29:18.604 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-06-29 11:29:18.604 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-06-29 11:29:18.605 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-06-29 11:29:18.606 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-06-29 11:29:18.606 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-06-29 11:29:18.642 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-06-29 11:29:18.642 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-06-29 11:29:18.642 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-06-29 11:29:18.643 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-06-29 11:29:18.643 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-06-29 11:29:18.643 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-06-29 11:29:18.798 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.s.SolrIndexSearcher Opening [Searcher@2332e29b[demo] main]
+2020-06-29 11:29:18.798 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.s.SolrIndexSearcher Opening [Searcher@5b899495[lyrics] main]
+2020-06-29 11:29:18.799 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.s.SolrIndexSearcher Opening [Searcher@6a5f6028[songs] main]
+2020-06-29 11:29:18.814 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/demo/conf
+2020-06-29 11:29:18.814 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/lyrics/conf
+2020-06-29 11:29:18.815 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songs/conf
+2020-06-29 11:29:18.851 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-06-29 11:29:18.851 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-06-29 11:29:18.856 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-06-29 11:29:18.863 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-06-29 11:29:18.863 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-06-29 11:29:18.863 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-06-29 11:29:18.865 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=song,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01,thresholdTokenFrequency=0.01}
+2020-06-29 11:29:18.880 INFO  (coreLoadExecutor-9-thread-3) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-06-29 11:29:18.881 INFO  (coreLoadExecutor-9-thread-2) [   x:lyrics] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-06-29 11:29:18.881 INFO  (coreLoadExecutor-9-thread-1) [   x:demo] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-06-29 11:29:18.905 INFO  (searcherExecutor-12-thread-1-processing-x:lyrics) [   x:lyrics] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5b899495[lyrics] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(8.1.1):C804:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1562091299185}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:18.905 INFO  (searcherExecutor-10-thread-1-processing-x:demo) [   x:demo] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2332e29b[demo] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C2121:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593285658472}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.5.2):C149:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593285659002}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:18.905 INFO  (searcherExecutor-10-thread-1-processing-x:demo) [   x:demo] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-06-29 11:29:18.905 INFO  (searcherExecutor-12-thread-1-processing-x:lyrics) [   x:lyrics] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-06-29 11:29:18.905 INFO  (searcherExecutor-12-thread-1-processing-x:lyrics) [   x:lyrics] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-06-29 11:29:18.905 INFO  (searcherExecutor-10-thread-1-processing-x:demo) [   x:demo] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-06-29 11:29:18.905 INFO  (searcherExecutor-12-thread-1-processing-x:lyrics) [   x:lyrics] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-06-29 11:29:18.910 INFO  (searcherExecutor-11-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6a5f6028[songs] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C2270:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593203488601}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:18.910 INFO  (searcherExecutor-11-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-06-29 11:29:18.911 INFO  (searcherExecutor-11-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-06-29 11:29:18.919 INFO  (searcherExecutor-12-thread-1-processing-x:lyrics) [   x:lyrics] o.a.s.c.SolrCore [lyrics] Registered new searcher Searcher@5b899495[lyrics] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(8.1.1):C804:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_201, java.vm.version=25.201-b09, lucene.version=8.1.1, os.arch=amd64, java.runtime.version=1.8.0_201-b09, source=flush, os.version=10.0, timestamp=1562091299185}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:18.919 INFO  (searcherExecutor-10-thread-1-processing-x:demo) [   x:demo] o.a.s.c.SolrCore [demo] Registered new searcher Searcher@2332e29b[demo] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C2121:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593285658472}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.5.2):C149:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593285659002}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:18.920 INFO  (searcherExecutor-11-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs] Registered new searcher Searcher@6a5f6028[songs] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C2270:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593203488601}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:18.927 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2020-06-29 11:29:18.931 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-06-29 11:29:18.933 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.2
+2020-06-29 11:29:18.937 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.2
+2020-06-29 11:29:18.991 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.IndexSchema [localpedia] Schema name=example
+2020-06-29 11:29:18.999 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.IndexSchema [films] Schema name=default-config
+2020-06-29 11:29:19.010 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.013 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.s.IndexSchema [songscollectionnew] Schema name=default-config
+2020-06-29 11:29:19.016 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.019 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.022 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.029 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.036 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.037 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.037 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.037 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.037 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.038 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.040 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.040 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.041 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.042 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.042 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.042 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.042 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.042 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.043 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.043 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.044 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.044 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.044 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.044 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.044 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.044 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.045 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.045 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.045 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.045 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.046 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.047 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.047 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.047 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.048 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.048 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.048 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.048 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.048 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.049 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.049 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.050 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.050 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.050 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.058 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.058 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.058 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.058 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.058 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.058 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.059 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.059 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.060 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.060 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.061 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.061 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.061 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.061 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.062 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.063 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.063 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.063 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.063 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.063 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.063 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.063 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.065 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.065 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.065 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.065 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.067 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.067 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.067 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.067 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.070 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.071 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.071 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.071 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.073 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.073 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-06-29 11:29:19.078 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.132 WARN  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.CurrencyField]. Please consult documentation how to replace it accordingly.
+2020-06-29 11:29:19.144 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema example/1.5 with uniqueid field id
+2020-06-29 11:29:19.179 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'localpedia' using configuration from instancedir /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/localpedia, trusted=true
+2020-06-29 11:29:19.180 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localpedia' (registry 'solr.core.localpedia') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:19.180 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.c.SolrCore [[localpedia] ] Opening new SolrCore at [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/localpedia], dataDir=[/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/localpedia/data/]
+2020-06-29 11:29:19.241 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-06-29 11:29:19.241 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-06-29 11:29:19.241 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-06-29 11:29:19.246 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-06-29 11:29:19.246 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-06-29 11:29:19.261 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field track_id
+2020-06-29 11:29:19.307 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'films' using configuration from instancedir /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/films, trusted=true
+2020-06-29 11:29:19.307 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.films' (registry 'solr.core.films') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:19.308 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrCore [[films] ] Opening new SolrCore at [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/films], dataDir=[/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/films/data/]
+2020-06-29 11:29:19.326 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'songscollectionnew' using configuration from instancedir /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songscollectionnew, trusted=true
+2020-06-29 11:29:19.326 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songscollectionnew' (registry 'solr.core.songscollectionnew') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:19.326 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.c.SolrCore [[songscollectionnew] ] Opening new SolrCore at [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songscollectionnew], dataDir=[/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songscollectionnew/data/]
+2020-06-29 11:29:19.396 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-06-29 11:29:19.396 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-06-29 11:29:19.400 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-06-29 11:29:19.400 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-06-29 11:29:19.412 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-06-29 11:29:19.413 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-06-29 11:29:19.417 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-06-29 11:29:19.417 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-06-29 11:29:19.424 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@67af6ea9[films] main]
+2020-06-29 11:29:19.425 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/films/conf
+2020-06-29 11:29:19.425 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-06-29 11:29:19.426 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-06-29 11:29:19.427 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-06-29 11:29:19.429 INFO  (searcherExecutor-30-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@67af6ea9[films] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C1100:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593195066448}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:19.429 INFO  (searcherExecutor-30-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-06-29 11:29:19.430 INFO  (searcherExecutor-30-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-06-29 11:29:19.433 INFO  (searcherExecutor-30-thread-1) [   ] o.a.s.c.SolrCore [films] Registered new searcher Searcher@67af6ea9[films] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C1100:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593195066448}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:19.435 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@340183ed[songscollectionnew] main]
+2020-06-29 11:29:19.437 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/songscollectionnew/conf
+2020-06-29 11:29:19.441 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-06-29 11:29:19.442 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-06-29 11:29:19.443 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-06-29 11:29:19.446 INFO  (searcherExecutor-31-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@340183ed[songscollectionnew] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C2270:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593429222885}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:19.446 INFO  (searcherExecutor-31-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-06-29 11:29:19.446 INFO  (searcherExecutor-31-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-06-29 11:29:19.449 INFO  (searcherExecutor-31-thread-1) [   ] o.a.s.c.SolrCore [songscollectionnew] Registered new searcher Searcher@340183ed[songscollectionnew] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.2):C2270:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593429222885}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:19.450 WARN  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/IR-project3/../../../lib filtered by .*\.jar to classpath: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/IR-project3/../../../lib
+2020-06-29 11:29:19.450 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrResourceLoader [IR-project3] Added 62 libs to classloader, from paths: [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/clustering/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/extraction/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/langid/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/contrib/velocity/lib, /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/dist]
+2020-06-29 11:29:19.467 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6851960e[localpedia] main]
+2020-06-29 11:29:19.468 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/localpedia/conf
+2020-06-29 11:29:19.468 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/localpedia/conf
+2020-06-29 11:29:19.469 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2020-06-29 11:29:19.469 INFO  (coreLoadExecutor-9-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-06-29 11:29:19.480 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
+2020-06-29 11:29:19.508 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.SolrCore [localpedia] Registered new searcher Searcher@6851960e[localpedia] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_c4(8.5.2):C246140:[diagnostics={os=Mac OS X, java.version=11.0.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=merge, os.version=10.15.5, java.vendor=Oracle Corporation, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, mergeMaxNumSegments=-1, mergeFactor=10, timestamp=1593376024531}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_d8(8.5.2):c9761:[diagnostics={os=Mac OS X, java.version=11.0.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=merge, os.version=10.15.5, java.vendor=Oracle Corporation, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, mergeMaxNumSegments=-1, mergeFactor=10, timestamp=1593376063674}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_ct(8.5.2):c2865:[diagnostics={os=Mac OS X, java.version=11.0.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=merge, os.version=10.15.5, java.vendor=Oracle Corporation, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, mergeMaxNumSegments=-1, mergeFactor=10, timestamp=1593376045280}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_d2(8.5.2):c7533:[diagnostics={os=Mac OS X, java.version=11.0.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=merge, os.version=10.15.5, java.vendor=Oracle Corporation, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, mergeMaxNumSegments=-1, mergeFactor=10, timestamp=1593376058199}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_ch(8.5.2):C2186:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376044448}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_d9(8.5.2):C1384:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376074094}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_d7(8.5.2):C1496:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376074221}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_d6(8.5.2):C1578:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376074227}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_dm(8.5.2):c1039:[diagnostics={os=Mac OS X, java.version=11.0.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=merge, os.version=10.15.5, java.vendor=Oracle Corporation, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, mergeMaxNumSegments=-1, mergeFactor=10, timestamp=1593376075276}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_dk(8.5.2):C868:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376083394}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_dn(8.5.2):C1455:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376083498}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_do(8.5.2):C1202:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376083594}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_dl(8.5.2):C670:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=11.0.2, java.vm.version=11.0.2+9-LTS, lucene.version=8.5.2, os.arch=x86_64, java.runtime.version=11.0.2+9-LTS, source=flush, os.version=10.15.5, timestamp=1593376083634}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:19.522 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.IndexSchema [IR-project3] Schema name=default-config
+2020-06-29 11:29:19.636 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-06-29 11:29:19.681 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'IR-project3' using configuration from instancedir /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/IR-project3, trusted=true
+2020-06-29 11:29:19.681 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.IR-project3' (registry 'solr.core.IR-project3') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@225129c
+2020-06-29 11:29:19.682 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrCore [[IR-project3] ] Opening new SolrCore at [/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/IR-project3], dataDir=[/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/IR-project3/data/]
+2020-06-29 11:29:19.684 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-06-29 11:29:19.724 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-06-29 11:29:19.724 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-06-29 11:29:19.727 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-06-29 11:29:19.728 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-06-29 11:29:19.747 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@23fbfe77[IR-project3] main]
+2020-06-29 11:29:19.748 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr/IR-project3/conf
+2020-06-29 11:29:19.748 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-06-29 11:29:19.748 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-06-29 11:29:19.749 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-06-29 11:29:19.752 INFO  (searcherExecutor-40-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@23fbfe77[IR-project3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C105:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_181, java.vm.version=25.181-b13, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_181-b13, source=flush, os.version=10.0, timestamp=1561967192783}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:19.752 INFO  (searcherExecutor-40-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-06-29 11:29:19.752 INFO  (searcherExecutor-40-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-06-29 11:29:19.755 INFO  (searcherExecutor-40-thread-1) [   ] o.a.s.c.SolrCore [IR-project3] Registered new searcher Searcher@23fbfe77[IR-project3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.2):C105:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=1.8.0_181, java.vm.version=25.181-b13, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_181-b13, source=flush, os.version=10.0, timestamp=1561967192783}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-06-29 11:29:28.006 INFO  (qtp335107734-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593430167817} status=0 QTime=7
+2020-06-29 11:29:28.018 INFO  (qtp335107734-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593430167817} status=0 QTime=14
+2020-06-29 11:29:30.692 INFO  (qtp335107734-15) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=*:*&_=1593430167961} hits=2270 status=0 QTime=97
+2020-06-29 11:29:38.744 INFO  (qtp335107734-22) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=lyrics:*&_=1593430167961} hits=2270 status=0 QTime=8
+2020-06-29 11:29:44.648 INFO  (qtp335107734-15) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=lyrics:+මන්දාරම්&_=1593430167961} hits=0 status=0 QTime=10
+2020-06-29 11:29:49.101 INFO  (qtp335107734-22) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=මන්දාරම්&_=1593430167961} hits=0 status=0 QTime=1
+2020-06-29 11:29:57.174 INFO  (qtp335107734-15) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/query params={q=මන්දාරම්&_=1593430167961} hits=0 status=0 QTime=0
+2020-06-29 11:29:58.040 INFO  (qtp335107734-22) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/query params={q=මන්දාරම්&_=1593430167961} hits=0 status=0 QTime=0
+2020-06-29 11:29:58.479 INFO  (qtp335107734-15) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/query params={q=මන්දාරම්&_=1593430167961} hits=0 status=0 QTime=0
+2020-06-29 11:29:58.985 INFO  (qtp335107734-22) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/query params={q=මන්දාරම්&_=1593430167961} hits=0 status=0 QTime=1
+2020-06-29 11:31:24.290 ERROR (qtp335107734-15) [   x:songscollectionnew] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field text
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-06-29 11:31:24.290 INFO  (qtp335107734-15) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/query params={q=මන්දාරම්&df=text&_=1593430167961} status=400 QTime=3
+2020-06-29 11:31:57.963 INFO  (qtp335107734-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1593430317833} status=0 QTime=0
+2020-06-29 11:31:57.969 INFO  (qtp335107734-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1593430317833} status=0 QTime=5
+2020-06-29 11:32:07.936 INFO  (qtp335107734-18) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=*&_=1593430317929} hits=2270 status=0 QTime=0
+2020-06-29 11:32:14.163 INFO  (qtp335107734-54) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=මන්දාරම්&_=1593430317929} hits=0 status=0 QTime=0
+2020-06-29 11:32:19.662 INFO  (qtp335107734-18) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=Amma&_=1593430317929} hits=0 status=0 QTime=3
+2020-06-29 11:32:20.909 INFO  (qtp335107734-54) [   x:songscollectionnew] o.a.s.c.S.Request [songscollectionnew]  webapp=/solr path=/select params={q=Amma&_=1593430317929} hits=0 status=0 QTime=0
+2020-06-29 11:44:41.640 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@56276db8{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-06-29 11:44:41.640 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-06-29 11:44:41.653 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=737935282
+2020-06-29 11:44:41.656 INFO  (coreCloseExecutor-45-thread-1) [   x:lyrics] o.a.s.c.SolrCore [lyrics]  CLOSING SolrCore org.apache.solr.core.SolrCore@7970a790
+2020-06-29 11:44:41.656 INFO  (coreCloseExecutor-45-thread-1) [   x:lyrics] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.lyrics, tag=SolrCore@7970a790
+2020-06-29 11:44:41.657 INFO  (coreCloseExecutor-45-thread-1) [   x:lyrics] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@13d16e5c: rootName = null, domain = solr.core.lyrics, service url = null, agent id = null] for registry solr.core.lyrics / com.codahale.metrics.MetricRegistry@76d5df6a
+2020-06-29 11:44:41.658 INFO  (coreCloseExecutor-45-thread-2) [   x:demo] o.a.s.c.SolrCore [demo]  CLOSING SolrCore org.apache.solr.core.SolrCore@51375e40
+2020-06-29 11:44:41.668 INFO  (coreCloseExecutor-45-thread-3) [   x:songs] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@710f1d75
+2020-06-29 11:44:41.681 INFO  (coreCloseExecutor-45-thread-5) [   x:songscollectionnew] o.a.s.c.SolrCore [songscollectionnew]  CLOSING SolrCore org.apache.solr.core.SolrCore@4cbf1218
+2020-06-29 11:44:41.684 INFO  (coreCloseExecutor-45-thread-6) [   x:localpedia] o.a.s.c.SolrCore [localpedia]  CLOSING SolrCore org.apache.solr.core.SolrCore@37fe6206
+2020-06-29 11:44:41.687 INFO  (coreCloseExecutor-45-thread-4) [   x:films] o.a.s.c.SolrCore [films]  CLOSING SolrCore org.apache.solr.core.SolrCore@2c20dd7b
+2020-06-29 11:44:41.688 INFO  (coreCloseExecutor-45-thread-7) [   x:IR-project3] o.a.s.c.SolrCore [IR-project3]  CLOSING SolrCore org.apache.solr.core.SolrCore@657fe8a1
+2020-06-29 11:44:41.699 INFO  (coreCloseExecutor-45-thread-2) [   x:demo] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.demo, tag=SolrCore@51375e40
+2020-06-29 11:44:41.699 INFO  (coreCloseExecutor-45-thread-2) [   x:demo] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@643241d3: rootName = null, domain = solr.core.demo, service url = null, agent id = null] for registry solr.core.demo / com.codahale.metrics.MetricRegistry@79561f7f
+2020-06-29 11:44:41.725 INFO  (coreCloseExecutor-45-thread-1) [   x:lyrics] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-06-29 11:44:41.731 INFO  (coreCloseExecutor-45-thread-3) [   x:songs] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs, tag=SolrCore@710f1d75
+2020-06-29 11:44:41.731 INFO  (coreCloseExecutor-45-thread-3) [   x:songs] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5676a363: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs / com.codahale.metrics.MetricRegistry@440e2ea1
+2020-06-29 11:44:41.746 INFO  (coreCloseExecutor-45-thread-2) [   x:demo] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-06-29 11:44:41.752 INFO  (coreCloseExecutor-45-thread-5) [   x:songscollectionnew] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songscollectionnew, tag=SolrCore@4cbf1218
+2020-06-29 11:44:41.753 INFO  (coreCloseExecutor-45-thread-5) [   x:songscollectionnew] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1cd1c5c9: rootName = null, domain = solr.core.songscollectionnew, service url = null, agent id = null] for registry solr.core.songscollectionnew / com.codahale.metrics.MetricRegistry@243b0cb
+2020-06-29 11:44:41.764 INFO  (coreCloseExecutor-45-thread-3) [   x:songs] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-06-29 11:44:41.772 INFO  (coreCloseExecutor-45-thread-6) [   x:localpedia] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localpedia, tag=SolrCore@37fe6206
+2020-06-29 11:44:41.772 INFO  (coreCloseExecutor-45-thread-6) [   x:localpedia] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5670542c: rootName = null, domain = solr.core.localpedia, service url = null, agent id = null] for registry solr.core.localpedia / com.codahale.metrics.MetricRegistry@7ed05d66
+2020-06-29 11:44:41.776 INFO  (coreCloseExecutor-45-thread-5) [   x:songscollectionnew] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-06-29 11:44:41.792 INFO  (coreCloseExecutor-45-thread-4) [   x:films] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.films, tag=SolrCore@2c20dd7b
+2020-06-29 11:44:41.792 INFO  (coreCloseExecutor-45-thread-4) [   x:films] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@17747f94: rootName = null, domain = solr.core.films, service url = null, agent id = null] for registry solr.core.films / com.codahale.metrics.MetricRegistry@76b6edd1
+2020-06-29 11:44:41.798 INFO  (coreCloseExecutor-45-thread-6) [   x:localpedia] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-06-29 11:44:41.810 INFO  (coreCloseExecutor-45-thread-7) [   x:IR-project3] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.IR-project3, tag=SolrCore@657fe8a1
+2020-06-29 11:44:41.810 INFO  (coreCloseExecutor-45-thread-7) [   x:IR-project3] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@14e63ca9: rootName = null, domain = solr.core.IR-project3, service url = null, agent id = null] for registry solr.core.IR-project3 / com.codahale.metrics.MetricRegistry@4cce0339
+2020-06-29 11:44:41.813 INFO  (coreCloseExecutor-45-thread-4) [   x:films] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-06-29 11:44:41.823 INFO  (coreCloseExecutor-45-thread-7) [   x:IR-project3] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-06-29 11:44:41.832 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-06-29 11:44:41.832 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1abebef3: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@1b4a5033
+2020-06-29 11:44:41.834 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-06-29 11:44:41.835 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7c112f5f: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@5000c25a
+2020-06-29 11:44:41.836 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-06-29 11:44:41.836 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5961e92d: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@7c0e6b89
+2020-06-29 11:44:41.854 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@127e70c5{/solr,null,UNAVAILABLE}{/Users/osanda/Documents/S07/ML/Search-Engine-Sinhala-Songs/Solr-Engine/server/solr-webapp/webapp}
