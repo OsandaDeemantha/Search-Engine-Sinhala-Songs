@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import requests
 app = Flask(__name__)
 
-solr_url = 'http://localhost:8983/solr/localpedia'
+solr_url = 'http://localhost:8983/solr/lyrics'
 
 def ceildiv(a, b):
     return -(-a // b)

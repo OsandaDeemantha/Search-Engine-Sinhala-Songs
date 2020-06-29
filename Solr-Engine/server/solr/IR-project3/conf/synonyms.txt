@@ -1,0 +1,55 @@
+# The ASF licenses this file to You under the Apache License, Vesrsion 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text	
+
+
+කාර්මික,තාක්ෂණ,තාක්ෂණය,ශිල්ප, තාක්ෂණවේදය=>Technology
+ඇපල්=>Apple
+ඇප්,app,applications,application=>Apps
+ක්‍රීඩා,ගේම්=>Gaming
+ආරක්ෂාව,සුරක්ෂිතභාවය,සුරැකුම=>Secuirity
+ගූගල්=>Google
+ජංගම,phone=>Mobile
+ව්‍යාපාර,ව්‍යාපාරික,වෙළඳ=>Business
+ඇන්ඩ්‍රොයිඩ්=>Android
+සමාජ ජාල=>Social Media
+අන්තර්ජාලය=>Internet
+මෘදුකාංග=>Softwares
+විනෝද,Fun=>Entertaining
+
+january,jan,ජනවාරි 
+february,feb,පෙබරවාරි 
+march,මාර්තු
+april,අප්‍රේල්
+may,මැයි
+june,ජූනි 
+july,jul,ජූලි
+august,aug,අගෝස්තු 
+september,sep,සැප්තැම්බර් 
+october,oct,ඔක්තෝබර්
+november,nov,නොවැම්බර් 
+december,dec,දෙසැම්බර්
+
+
+
+# Some synonym groups specific to this example
+GB,gib,gigabyte,gigabytes
+MB,mib,megabyte,megabytes
+Television, Televisions, TV, TVs
+#notice we use "gib" instead of "GiB" so any WordDelimiterGraphFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+pixima , pixma
+
