@@ -22,7 +22,7 @@ def createIndex():
     print (res)
 
 def read_all_songs():
-    with open('/app/data/all/all_songs.json','r') as f:
+    with open('/app/data/all/songs.json','r') as f:
         all_songs = json.loads(f.read())
         res_list = [i for n, i in enumerate(all_songs) if i not in all_songs[n + 1:]]
         return res_list
