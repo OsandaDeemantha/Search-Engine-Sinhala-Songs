@@ -15,7 +15,7 @@ services:
     ports:
       - 9200:9200
     volumes:
-      - /home/ubuntu/my-folder/IR/elasticsearch:/usr/share/elasticsearch/data
+      - ../Data/db:/usr/share/elasticsearch/data
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.2.0
@@ -34,3 +34,4 @@ services:
       - 5000:5000
     depends_on:
       - elasticsearch
+    restart: on-failure

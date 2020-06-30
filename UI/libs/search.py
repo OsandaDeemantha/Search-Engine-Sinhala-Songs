@@ -3,7 +3,7 @@ from elasticsearch_dsl import Index
 import json,re
 import queries
 
-es = Elasticsearch(["localhost"])
+es = Elasticsearch(["elasticsearch"])
 INDEX = 'sinhala-songs'
 
 def isEnglish(s):
