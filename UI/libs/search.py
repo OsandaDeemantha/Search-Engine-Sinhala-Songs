@@ -3,7 +3,7 @@ from elasticsearch_dsl import Index
 import json,re
 import queries
 
-client = Elasticsearch(["localhost"])
+es = Elasticsearch(["localhost"])
 INDEX = 'sinhala-songs'
 
 def isEnglish(s):
@@ -17,12 +17,12 @@ def isEnglish(s):
         return True
 
 def createIndex():
-    index = Index(INDEX,using=client)
+    index = Index(INDEX,using=es)
     res = index.create()
     print (res)
 
 def read_all_songs():
-    with open('summary-corpus/all_songs.json','r') as f:
+    with open('../Data/all/all_songs.json','r') as f:
         all_songs = json.loads(f.read())
         res_list = [i for n, i in enumerate(all_songs) if i not in all_songs[n + 1:]]
         return res_list
@@ -180,34 +180,34 @@ def search(phrase):
     else:
         query_body = queries.agg_multi_match_and_sort_q(phrase, num, fields)
         print('Making Range Query')
-    res = client.search(index=INDEX, body=query_body)
+    res = es.search(index=INDEX, body=query_body)
     return res
 
 def get_all_gen():
-    with open('summary-corpus/all_genres.json', 'r') as t:
+    with open('../Data/all/genres.json', 'r') as t:
         all_genres = json.loads(t.read())
         return all_genres.keys(), all_genres.values()
 def get_all_art():
-    with open('summary-corpus/all_artists.json', 'r') as t:
+    with open('../Data/all/artists.json', 'r') as t:
         all_artists = json.loads(t.read())
         return all_artists.keys(), all_artists.values()
 def get_all_lyrics():
-    with open('summary-corpus/all_lyricists.json', 'r') as t:
+    with open('../Data/all/lyricists.json', 'r') as t:
         all_lyricists = json.loads(t.read())
         return all_lyricists.keys(), all_lyricists.values()
 def get_all_music():
-    with open('summary-corpus/all_music.json', 'r') as t:
+    with open('../Data/all/music.json', 'r') as t:
         all_music = json.loads(t.read())
         return all_music.keys(), all_music.values()
 
 #CREATING ELASTICSEARCH INDEX
-if client.indices.exists(index=INDEX):
+if es.indices.exists(index=INDEX):
     print("Index alrealy exist. No new index created...!")
 else:
     print("Index not found. New index will be created...!")
     createIndex()
     all_songs = read_all_songs()
-    helpers.bulk(client,genData(all_songs))
+    helpers.bulk(es,genData(all_songs))
 
 english_genres, sinhala_genres = get_all_gen()
 english_artists, sinhala_artists = get_all_art()

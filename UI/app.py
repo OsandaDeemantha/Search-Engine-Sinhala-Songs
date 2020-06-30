@@ -1,3 +1,6 @@
+import sys
+sys.path.append('./libs')
+
 from flask import Flask, render_template, request
 from search import search
 app = Flask(__name__)
