@@ -22,7 +22,7 @@ def createIndex():
     print (res)
 
 def read_all_songs():
-    with open('../Data/all/all_songs.json','r') as f:
+    with open('data/all/all_songs.json','r') as f:
         all_songs = json.loads(f.read())
         res_list = [i for n, i in enumerate(all_songs) if i not in all_songs[n + 1:]]
         return res_list
@@ -184,19 +184,19 @@ def search(phrase):
     return res
 
 def get_all_gen():
-    with open('../Data/all/genres.json', 'r') as t:
+    with open('data/all/genres.json', 'r') as t:
         all_genres = json.loads(t.read())
         return all_genres.keys(), all_genres.values()
 def get_all_art():
-    with open('../Data/all/artists.json', 'r') as t:
+    with open('data/all/artists.json', 'r') as t:
         all_artists = json.loads(t.read())
         return all_artists.keys(), all_artists.values()
 def get_all_lyrics():
-    with open('../Data/all/lyricists.json', 'r') as t:
+    with open('data/all/lyricists.json', 'r') as t:
         all_lyricists = json.loads(t.read())
         return all_lyricists.keys(), all_lyricists.values()
 def get_all_music():
-    with open('../Data/all/music.json', 'r') as t:
+    with open('data/all/music.json', 'r') as t:
         all_music = json.loads(t.read())
         return all_music.keys(), all_music.values()
 
