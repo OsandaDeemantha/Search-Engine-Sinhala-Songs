@@ -10,8 +10,10 @@ def isEnglish(s):
     try:
         s.encode(encoding='utf-8').decode('ascii')
     except UnicodeDecodeError:
+        print("Sinhala Detected...!")
         return False
     else:
+        print("English Detected...!")
         return True
 
 def createIndex():
@@ -89,7 +91,6 @@ def genData(song_array):
 
 
 def boost(boost_array):
-    # views is not taken for search
     
     term1 ="title^{}".format(boost_array[1])
     term2 = "genre^{}".format(boost_array[2])
@@ -225,13 +226,3 @@ syn_key = ['Minor','Major','minor','major']
 syn_genre = ['කැලිප්සෝ','සම්භාව්ය','වත්මන්','චිත්‍රපට','පොප්','දේවානුභාවයෙන්','රන්','පැරණි','රන්වන්','පොප්','කණ්ඩායම්','යුගල','අලුත්','නව','පැරණි','පොප්ස්']
 
 synonym_list = [None, None, syn_genre, syn_eng_artist, syn_artist, syn_eng_lyrics, syn_lyrics, syn_eng_music, syn_music]
-#terms = ["ආදරේ මන්දිරේ",'amaradewa 10']
-
-# for word in terms:
-#     search(word)
-
-
-
-
-
-
