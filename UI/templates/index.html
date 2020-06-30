@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>සිංහල ගීත සෙවුම් යන්ත්‍රය</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<!--<link href="main.css" rel="stylesheet">-->
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<script>
+		function MyFunction(aggregate){
+			keyword = aggregate.name;
+			console.log("keyword: "+keyword);
+			songs_array = document.getElementsByClassName('search-result row');
+			songs_array = Array.from(songs_array);
+			matching_songs = songs_array.filter(keyword_filter,keyword);
+			len_matching = matching_songs.length;
+			len_original = songs_array.length;
+			section = document.getElementById('song_section');
+			section.innerHTML = matching_songs.map(e => e.outerHTML).join()
+			console.log(section);
+			header = document.getElementById('results');
+			header.innerHTML = `<h2 class="lead" id="results"><strong class="text-success">${len_matching}</strong> results out of <strong class="text-success">${len_original}</strong> matches the criteria</h2>`;
+	
+			var tags_ul = document.getElementById("tags");
+			var tags_li = document.createElement("li");
+			tags_li.setAttribute("style","display:inline-block; padding:5px; margin:5px; border: 1px solid black; border-radius: 5px;");
+			tags_li.appendChild(document.createTextNode(keyword));
+			tags_ul.appendChild(tags_li);
+		}
+		function keyword_filter(element){
+			keyword = this;
+			content = element.innerText;
+			return content.includes(keyword)
+		}
+	</script>
+    <div class="container">
+		<h1 class="text-center">සිංහල ගීත සෙවුම් යන්ත්‍රය</h1>
+		<br><br>
+		<form class="form-inline text-center" action="{{ url_for('search_box') }}" method="post">
+			<div class="form-group">
+				<input class="form-control form-control-lg" type="text" class="searchTerm" name="searchTerm"  placeholder="මෙහි ටයිප් කරන්න...">
+			</div>
+			<input class="btn btn-primary" type="submit" value="සොයන්න">
+		</form>
+	
+		{% if hits %}
+		<hgroup class="mb20">
+			<h2>සෙවුම් ලැයිස්තුව</h2>
+			<h2 class="lead" id="results"><strong class="text-success">{{ num_results }}</strong> results were found for "<strong class="text-success">{{  query  }}</strong>"</h2>
+		</hgroup>
+		<h4><span class="font-italic">Tags :</span><ul id="tags" style="display: inline-block"></ul></h4>
+	
+		<section id='song_section' class="col-md-8">
+			{% for hit in hits %}
+			<article class="search-result row">
+				<div class="col-md-12">
+					<h3><i class="glyphicon glyphicon-music"></i>      {{ hit._source.title }}</h3>
+					<ul class="meta-search">
+						<li><span> Genre : {{ hit._source.genre }} </span></li>
+						<li><span> Artist : {{ hit._source.artist }}</span></li>
+						<li><span> Music : {{ hit._source.music }}</span></li>
+						<li><span> Lyrics : {{ hit._source.lyrics }}</span></li>
+						<li><span> Key : {{ hit._source.guitar_key }}</span></li>
+						<li><span> Views : {{ hit._source.views }}</span></li>
+					</ul>
+					<p style="white-space: pre-line">{{ hit._source.song_lyrics }}</p>
+				</div>
+				<span class="clearfix borda"></span>
+			</article>
+			{% endfor %}
+		</section>
+		<section class="col-md-4">
+			{% for key,value in aggs.items() %}
+			<h4 class="text-center">{{ key }}</h4>
+				<ul class="meta-search list-group row">
+					{% for bucket in value.buckets %}
+					<li class="list-group-item col-xs-6"><a id="myLink" href="#" name="{{ bucket.key }}" onclick="MyFunction(this)" >{{ bucket.key }}<!--( {{ bucket.doc_count }} )--></a></li>
+				{% endfor %}
+				</ul>
+			{% endfor %}
+		</section>
+	
+		{% else %}
+			{% if init %}
+			{% else %}
+			<hgroup class="mb20">
+				<h2>සෙවුම් ලැයිස්තුව</h2>
+				<h2 class="lead"><strong class="text-success">0</strong> results were found for "<strong class="text-success">{{  query  }}</strong>"</h2>
+			</hgroup>
+			{% endif %}
+		{% endif %}
+	</div>
+  </body>
+</html>
