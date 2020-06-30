@@ -6,6 +6,6 @@ WORKDIR /app
 
 RUN pip install -r libs/requirements.txt
 
-ENTRYPOINT [ "python" ]
+EXPOSE 5000
 
-CMD [ "app.py" ]
+ENTRYPOINT ["python","app.py"]
