@@ -2,8 +2,6 @@
 
 **A sinhala/english text search engine for sinhala songs and lyrics**
 
-[TOCM]
-
 # Getting Started
 
 ## Prerequisites
@@ -23,8 +21,6 @@ You must have the following prerequisites on your machine/server
 ## How to Search
 
 After running the application you will have the access to a nice web interface that you can search and browse for your favourite sinhala songs, artists, lyrics, etc.
-
-[![Home Page UI](https://github.com/OsandaDeemantha/Search-Engine-Sinhala-Songs/blob/master/Home.png "Home Page UI")](https://github.com/OsandaDeemantha/Search-Engine-Sinhala-Songs/blob/master/Home.png "Home Page UI")
 
 ## Clean All
 
