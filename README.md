@@ -76,7 +76,9 @@ A rule based classification has been used to classify the search queries into di
 
 - **Boosting**
 
-Boosting has been used as the main query optimization technique. Each field of a search is boosted by a certain value based on the keywords present in the search phrase.
+Boosting has been used as a query optimization technique. Each song data field of a search is boosted with a predefined value based on the keywords in the search phrase.
+
+- **Inverted index**
 
 ------------
 
