@@ -27,7 +27,7 @@ After running the application you will have the access to a nice web interface t
 In order to stop servers and remove all container artifacts, run `sh stop.sh`
 
 
-[========]
+------------
 
 
 ## Features
