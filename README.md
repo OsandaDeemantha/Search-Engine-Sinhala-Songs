@@ -69,5 +69,21 @@ Song lyrics along with the metadata was scraped from [Sinhala Song Book](https:/
 
 ## Indexing and Querying Process
 
+- **Tokenization**
+- **Rule based classification**
 
+A rule based classification has been used to classify the search queries into different categories of searches. Different rules are applied based on the search phrase keywords after splitting the search phrase into tokens.
 
+- **Boosting**
+
+Boosting has been used as the main query optimization technique. Each field of a search is boosted by a certain value based on the keywords present in the search phrase.
+
+------------
+
+Following methods has been used as querying techniques.
+
+- **Multi-match query**
+- **Boolean query**
+- **Aggregations** - *to create facets*
+- **Sorting**
+- **Range**
