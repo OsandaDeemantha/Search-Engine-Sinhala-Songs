@@ -84,7 +84,7 @@ Boosting has been used as a query optimization technique. Each song data field o
 
 ------------
 
-Following methods has been used as querying techniques.
+Following methods have been used as querying techniques.
 
 - **Multi-match query**
 - **Boolean query**
